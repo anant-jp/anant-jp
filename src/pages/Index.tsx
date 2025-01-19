@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Mail, Linkedin, Github, Phone } from "lucide-react";
+import TypingEffect from "@/components/TypingEffect";
+import FadeOut from "@/components/FadeOut";
 
 const Index = () => {
   useEffect(() => {
@@ -17,8 +19,11 @@ const Index = () => {
       {/* Hero Section */}
       <section className="container mx-auto px-4 py-20">
         <div className="text-center">
-          <h1 className="text-4xl font-bold mb-4">Anant Parmar</h1>
-          <p className="text-xl text-muted-foreground">Technical Business Analyst</p>
+          <h2 className="text-4xl font-bold mb-4 ">Hi, This is</h2>
+          <FadeOut />
+          <p className="text-xl text-muted-foreground font-semibold">
+            I am a <TypingEffect />
+          </p>
         </div>
       </section>
 
@@ -34,7 +39,7 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-8">
             <div>
               <img
-                src="https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI0LTA5L3Jhd3BpeGVsb2ZmaWNlMl9hX3BvcnRyYWl0X3Bob3RvX2Nsb3NlX3VwX2FfbWlkZGxlLWFnZWRfbWFuX2luX184OTZiOGQ3OC0xOTUwLTQ0MWItYTA1Mi02ZjE5NDgzMjljODkucG5n.png"
+                src="https://avatars.githubusercontent.com/u/173897893?v=4"
                 alt="Profile"
                 className="rounded-lg w-full"
               />
@@ -114,6 +119,21 @@ const Index = () => {
             </Card>
             {/* Add more skill cards */}
           </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="container mx-auto px-4 py-16">
+        <h2 className="text-3xl font-bold mb-8">TESTIMONIALS</h2>
+        <div className="space-y-8">
+          {[1, 2, 3].map((item) => (
+            <Card key={item} className="p-6">
+              <p className="text-lg mb-4">
+                "Anant is a highly skilled analyst who consistently delivers exceptional results. His ability to understand complex business requirements and translate them into technical solutions is unparalleled."
+              </p>
+              <p className="font-semibold">- Client {item}</p>
+            </Card>
+          ))}
         </div>
       </section>
 
