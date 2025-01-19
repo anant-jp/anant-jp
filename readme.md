@@ -1,0 +1,1 @@
+Privy: Embedded email capture form - https://www.privy.com/
