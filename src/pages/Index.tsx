@@ -17,8 +17,8 @@ const Index = () => {
       {/* Hero Section */}
       <section className="container mx-auto px-4 py-20">
         <div className="text-center">
-          <h1 className="text-4xl font-bold mb-4">Pratik Naikrawadi</h1>
-          <p className="text-xl text-muted-foreground">Tech Analyst</p>
+          <h1 className="text-4xl font-bold mb-4">Anant Parmar</h1>
+          <p className="text-xl text-muted-foreground">Technical Business Analyst</p>
         </div>
       </section>
 
@@ -34,7 +34,7 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-8">
             <div>
               <img
-                src="/lovable-uploads/30ed377e-4b7e-4a9b-9b7d-a417bd384e4e.png"
+                src="https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI0LTA5L3Jhd3BpeGVsb2ZmaWNlMl9hX3BvcnRyYWl0X3Bob3RvX2Nsb3NlX3VwX2FfbWlkZGxlLWFnZWRfbWFuX2luX184OTZiOGQ3OC0xOTUwLTQ0MWItYTA1Mi02ZjE5NDgzMjljODkucG5n.png"
                 alt="Profile"
                 className="rounded-lg w-full"
               />
@@ -52,7 +52,7 @@ const Index = () => {
                 </div>
                 <div>
                   <p className="font-semibold">Experience:</p>
-                  <p>5+ years</p>
+                  <p>4+ years</p>
                 </div>
               </div>
             </div>
