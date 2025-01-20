@@ -1,0 +1,22 @@
+[build]
+  # Command to install dependencies using legacy peer deps and then build the project
+  command = "npm install --legacy-peer-deps && npm run build"
+
+  # The directory containing the build output (adjust if using a different build folder)
+  publish = "dist"
+
+  # Optional: Specify a base directory for the build if your project isn't at the root level
+  # base = "src"
+
+[context.production.environment]
+  # You can set environment variables here for production (optional)
+  # Example: NODE_ENV = "production"
+  NODE_ENV = "production"
+
+[build.environment]
+  # Optional: Set environment variables for the build process
+  # Example: Set a custom Node.js version
+  NODE_VERSION = "18"
+
+  # Optional: Cache node_modules for faster builds
+  # cache = "node_modules"
